@@ -8,10 +8,10 @@ while [ "$j" -le 10 ]
 do
 	if [ "$j" -eq 4 ]
         then
-                echo "Bad Luck"
+                echo "bad Luck"
 	elif  [ "$j" -eq 8 ]
         then
-                echo "Good Luck"
+                echo "good Luck"
         else
                 echo "Best School"
         fi
