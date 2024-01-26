@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Displays "Best School" 10 times using a while loop.
+# displays bad luck for the 4th loop iteration
+# displays good luck for the 8th loop iteration
+
+j=1
+while [ "$j" -le 10 ]
+do
+	if [ "$j" -eq 4 ]
+        then
+                echo "bad Luck"
+	elif  [ "$j" -eq 8 ]
+        then
+                echo "good Luck"
+        else
+                echo "Best School"
+        fi
+        j=$(( j + 1 ))
+done
