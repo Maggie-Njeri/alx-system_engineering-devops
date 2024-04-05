@@ -41,11 +41,11 @@ frontend maddiekairi-frontend
         default_backend maddiekairi-backend
 
 frontend maddiekairi-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/maddiekairi.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.maddiekairi.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend maddiekairi-backend
 
 backend maddiekairi-backend
         balance roundrobin
         server 528681-web-01 54.81.207.206:80 check
-        server 528681-web-01 35.175.65.115:80 check
+        server 528681-web-02 35.175.65.115:80 check
