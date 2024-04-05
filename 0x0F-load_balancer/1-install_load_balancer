@@ -34,11 +34,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend maddiekairi-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend maddiekairi-tech-backend
 
-backend clickviral-tech-backend
+backend maddiekairi-tech-backend
     balance roundrobin
     server 528681-web-01 54.81.207.206:80 check
     server 528681-web-02 35.175.65.115:80 check
