@@ -15,6 +15,7 @@ def top_ten(subreddit):
             print(post.get('data').get('title'))
     except Exception:
         print(None)
+    print(response.status_code)
 
 
 if __name__ == "__main__":
